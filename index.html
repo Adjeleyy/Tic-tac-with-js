@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO-Battle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>XO-Battle</h1>
+
+        <div id="player-selection">
+            <h2>Choose your symbol:</h2>
+            <button class="symbol-button" id="X">X</button>
+            <button class="symbol-button" id="O">O</button>
+        </div>
+
+        <div id="game-container">
+            <div class="game-info">
+                <div id="scores">
+                    <div class="score">X - <span id="x-score">0</span></div>
+                    <div class="score">O - <span id="o-score">0</span></div>
+                </div>
+                <div id="turn-message" class="turn-message"></div>
+            </div>
+            <div id="game-grid">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <button id="reset-button" onclick="resetGame()">New Game</button>
+        </div>
+    </div>
+    <div id="message"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
